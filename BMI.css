@@ -1,0 +1,87 @@
+/* CSS untuk Bekas */
+body {
+  font-family: "Times New Roman", Times, serif;
+  margin: 20px;
+}
+
+/* Bekas */
+.container {
+  border: 1px solid #000;
+  width: 300px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+/* Tajuk */
+h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+/* Kumpulan Input */
+.input-group {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+/* Label dan Input dalam Kumpulan Input */
+.input-group label {
+  width: 90px;
+  font-size: 14px;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 3px;
+  border: 1px solid #767676;
+  font-size: 14px;
+}
+
+/* Kumpulan Butang */
+.button-group {
+  margin-bottom: 20px;
+}
+
+/* Butang */
+.button-group button {
+  padding: 3px 8px;
+  margin-right: 5px;
+  background-color: #efefef;
+  border: 1px solid #767676;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+/* Keadaan Hover dan Aktif Butang */
+.button-group button:active {
+  background-color: #e0e0e0;
+}
+
+/* Paparan Keputusan */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 13px;
+}
+
+/* Sel Pengepala dan Data Jadual */
+th, td {
+  border: 1px solid #000;
+  padding: 8px 4px;
+}
+
+/* Gaya Pengepala Jadual */
+th {
+  font-weight: bold;
+}
+
+/* Gaya Kategori BMI */
+.kurus { background-color: #FF4500; }  
+.normal { background-color: #90EE90; } 
+.terlebih_berat { background-color: #FFA500; }  
+.obesiti { background-color: #FF4500; color: white; }

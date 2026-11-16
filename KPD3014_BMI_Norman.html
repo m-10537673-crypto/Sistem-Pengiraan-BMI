@@ -1,0 +1,59 @@
+<!-- HTML untuk Kalkulator BMI -->
+<!DOCTYPE html>
+<!--Bahasa Melayu -->
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator BMI</title>
+  <!-- Stylesheet untuk gaya halaman -->
+  <link rel="stylesheet" href="BMI.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>KIRA BMI</h2>
+
+    <!-- Input untuk berat dan tinggi -->
+    <div class="input-group">
+      <label for="berat">Berat (kg):</label>
+      <input type="number" id="berat" step="any">
+    </div>
+    <!-- Input untuk tinggi -->
+    <div class="input-group">
+      <label for="tinggi">Tinggi (m):</label>
+      <input type="number" id="tinggi" step="any">
+    </div>
+
+    <!-- Butang untuk menghantar dan mereset -->
+    <div class="button-group">
+      <button onclick="kiraBMI()">HANTAR</button>
+      <button onclick="resetForm()">RESET</button>
+    </div>
+
+    <table>
+      <thead>
+        <!-- Tajuk jadual untuk keputusan BMI -->
+        <tr>
+          <th>Berat</th>
+          <th>Tinggi</th>
+          <th>BMI</th>
+          <th>Keputusan</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Baris keputusan awal dengan nilai kosong -->
+        <tr>
+          <td id="resBerat">-</td>
+          <td id="resTinggi">-</td>
+          <td id="resBMI">-</td>
+          <td id="resKeputusan">-</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Skrip JavaScript untuk logik BMI -->
+  <script src="BMI.js"></script>
+</body>
+</html>
